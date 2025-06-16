@@ -31,6 +31,7 @@ cpuflags=
 	--disable-static --enable-shared --enable-{gpl,version3} \
 	--disable-{stripping,doc,programs} \
 	--disable-{muxers,encoders,devices,filters} \
+ 	--enable-demuxer=dsd_lsbf --enable-demuxer=dsd_lsbf_planar --enable-decoder=dsd_msbf --enable-decoder=dsd_msbf_planar \
 	--disable-v4l2-m2m
 
 make -j$cores
